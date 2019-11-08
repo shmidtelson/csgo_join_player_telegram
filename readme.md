@@ -23,4 +23,4 @@ Plugin for notify to telegram about player connected
 * (Optional) Manage by `sm_telegram_notify_toggle` command
 
 ## Screenshots
-![Screenshot1](../assets/screenshot.png?raw=true)
+![Screenshot1](../assets/screenshot1.png?raw=true)
