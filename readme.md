@@ -21,3 +21,6 @@ Plugin for notify to telegram about player connected
 * Edit cfg/sourcemod/plugin.join_player_telegram.cfg
 * Restart server
 * (Optional) Manage by `sm_telegram_notify_toggle` command
+
+## Screenshots
+![Screenshot1](../assets/screenshot.png?raw=true)
