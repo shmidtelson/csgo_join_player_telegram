@@ -1,12 +1,12 @@
-##Description:
+## Description:
 
 Plugin for notify to telegram about player connected
 
-##Requires:
+## Requires:
 
 * [System2](https://forums.alliedmods.net/showthread.php?t=146019)
 
-##Docs:
+## Docs:
 
 #### Convars:
 * `sm_telegram_notify_enabled`  // enable plugin
@@ -16,7 +16,7 @@ Plugin for notify to telegram about player connected
 #### Commands:
 * `sm_telegram_notify_toggle` // Turn on/off plugin
 
-##Install:
+## Install:
 * Upload files on server
 * Edit cfg/sourcemod/plugin.join_player_telegram.cfg
 * Restart server
