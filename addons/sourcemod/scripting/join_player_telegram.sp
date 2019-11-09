@@ -53,8 +53,13 @@ public void Telegram_Send_Message(const char[] sMessage)
     char sURL[256];
     char sToken[128];
     char sChatID[128];
+    char error_sending[128] = "%s is empty, sending not working";
     GetConVarString(g_telegram_token, sToken, sizeof(sToken));
     GetConVarString(g_telegram_chat_id, sChatID, sizeof(sChatID));
+
+    if(StrEqual(sToken, "")) LogError(error_sending, "sm_telegram_notify_telegram_token");
+    if(StrEqual(sChatID, "")) LogError(error_sending, "sm_telegram_notify_chat_id");
+
     Format(sURL, sizeof(sURL), "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s", sToken, sChatID, sMessage);
     System2HTTPRequest httpRequest = new System2HTTPRequest(HttpResponseCallback, sURL);
     httpRequest.GET();
